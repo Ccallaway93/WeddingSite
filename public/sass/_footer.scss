@@ -1,0 +1,48 @@
+.footer {
+    background-color: $color-secondary-light;
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-rows: 5vh repeat(2, max-content);
+    grid-template-columns: 25vw 1fr 25vw;
+
+    &__logo{
+        grid-row: 2/ 3;
+        grid-column: 2 / 3;
+        border-top: .3rem solid #cacaca;
+
+        display: grid;
+        justify-items: center;
+    }
+
+    &__image{
+        grid-column: 1 / 3;
+        margin-top: 1rem;
+        width: 70%;
+    }
+
+    &__credit{
+        margin-top: 2rem;
+        border-top: .3rem solid #cacaca;
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        font-size: 2rem;
+        color: rgba(0,0,0,.4);
+
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1.6rem;
+        }
+    
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.4rem;
+        }
+    
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: .8rem;
+        }
+    }
+}

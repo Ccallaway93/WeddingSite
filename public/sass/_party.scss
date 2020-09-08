@@ -1,0 +1,199 @@
+.party{
+    background-image: linear-gradient(
+        to  bottom,
+        rgba(255,255,255, 1),
+        rgba($color-secondary-transition, 1), rgba($color-secondary-transition, 1),
+        rgba($color-secondary-transition, 1),  rgba($color-secondary-transition, 1),
+        rgba($color-secondary-transition, 1),  rgba($color-secondary-transition, 1),
+        rgba($color-secondary-transition, 1));
+
+    grid-column: full-start / full-end;
+
+    display: grid;
+     grid-template-rows: 10vh max-content max-content 10vh;
+    grid-template-columns: 1fr 50vw 1fr;
+    grid-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+        grid-gap: 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+        grid-gap: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+            grid-template-columns: 1fr 60vw 1fr;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr 70vw 1fr;
+    }
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: 5vh max-content minmax(min-content, max-content) minmax(min-content, max-content) 5vh;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-rows: 2vh max-content minmax(min-content, max-content) minmax(min-content, max-content) 2vh;
+        grid-template-columns: 1fr 80vw 1fr;
+    }
+
+    &__heading{
+        grid-row: 2 / 3;
+        grid-column: 1 / 4;
+        align-self: center;
+        justify-self: center;
+    }
+
+    &__sub{
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+        align-self: end;
+        justify-self: center;
+    }
+
+    &__title{
+        color: $color-black-light;
+        text-align: center;
+        font-size: 2rem;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 1.8rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.3rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 1rem;
+        }
+    }
+
+    &__name{
+        color: $color-primary;
+        text-align: center;
+        font-size: 2rem;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 1.8rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.3rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 1rem;
+        }
+    }
+}
+
+
+
+
+
+
+// .party{
+//     grid-column: full-start / full-end;
+//     background-color: white;
+//     // background-image: linear-gradient(
+//     // to  bottom,
+//     // rgba(255,255,255, 1),
+//     // rgba($color-secondary-transition, 1), rgba($color-secondary-transition, 1),
+//     // rgba($color-secondary-transition, 1),  rgba($color-secondary-transition, 1),
+//     // rgba($color-secondary-transition, 1),  rgba($color-secondary-transition, 1),
+//     // rgba($color-secondary-transition, 1));
+
+//     display: grid;
+//     grid-template-rows: 10vh max-content 1fr 20rem;
+//     grid-template-columns: 1fr 50vw 1fr;
+//     grid-gap: 3rem;
+
+
+//     &__heading{
+//         grid-row: 2 / 3;
+//         grid-column: 1 / 4;
+//         align-self: center;
+//         justify-self: center;
+//     }
+
+//     &__sub{
+//         grid-row: 1 / 2;
+//         grid-column: 1 / 4;
+//         align-self: end;
+//         justify-self: center;
+//     }
+
+//     &__title{
+//         color: $color-black-light;
+//         text-align: center;
+//         font-size: 2rem;
+
+//         @media only screen and (max-width: $bp-large) {
+//             font-size: 1.8rem;
+//         }
+//         @media only screen and (max-width: $bp-medium) {
+//             font-size: 1.5rem;
+//         }
+//     }
+
+//     &__name{
+//         color: $color-primary;
+//         text-align: center;
+//         font-size: 2rem;
+
+//         @media only screen and (max-width: $bp-large) {
+//             font-size: 1.8rem;
+//         }
+//         @media only screen and (max-width: $bp-medium) {
+//             font-size: 1.5rem;
+//         }
+//     }
+// }
+
+.glide{
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    width: 100%;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 75%;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+    }
+
+    &__image{
+        height: 50%;
+        width: 50%;
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 38%;
+            width: 38%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            height: 40%;
+            width: 40%;
+        }
+    }
+
+    &__slide{
+        text-align: center;
+    }
+
+    &__arrow{
+        color: $color-primary;
+        border: 2px solid rgba($color-primary, 0.5);
+
+        &:hover{
+            color: white;
+            background-color: $color-primary;
+            border: 2px solid rgba($color-primary, 0.5);
+        }
+
+        &--left{
+            left: 1rem;
+        }
+
+        &--right{
+            right: 1rem;
+        }
+    }
+}

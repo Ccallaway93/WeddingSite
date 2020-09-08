@@ -1,0 +1,21 @@
+.transition {
+
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-rows: 10vh;
+
+    &--1{
+        background-image: linear-gradient(
+            to  bottom,
+            rgba($color-secondary-transition, 1),
+            rgba(255,255,255, 1));
+    }
+    &--2{
+        background-image: linear-gradient(
+            to  top,
+            rgba($color-secondary-transition, 1),
+            rgba(255,255,255, 1));
+
+    }
+}

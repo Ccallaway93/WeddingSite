@@ -1,0 +1,186 @@
+.hotels{
+    //background-color: $color-secondary-light;
+    background-image: linear-gradient(
+        to  top,
+        rgba(255,255,255, 1),
+        rgba($color-secondary-transition, 1), rgba($color-secondary-transition, 1),
+        rgba($color-secondary-transition, 1),  rgba($color-secondary-transition, 1),
+        rgba($color-secondary-transition, 1),  rgba($color-secondary-transition, 1),
+        rgba($color-secondary-transition, 1));
+    grid-column: full-start / full-end;
+
+    display: grid;
+    //grid-template-rows: 20vh max-content max-content repeat(5, 1fr) 10vh;
+    grid-template-rows: 8vh repeat(2, max-content) 1fr .5fr;
+    grid-template-columns: 1fr 30vw 30vw 1fr;
+    grid-gap: 3rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: 1fr 35vw 35vw 1fr;
+    }
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: 1fr 40vw 40vw 1fr;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr 45vw 45vw 1fr;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-rows: 5vh repeat(2, max-content) repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+
+    &__first{
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;
+        }
+    }
+
+    &__second{
+        grid-row: 4 / 5;
+        grid-column: 3 / 4;
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-row: 6 / 7;
+            grid-column: 1 / 2;
+        }
+    }
+
+
+
+    &__heading{
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        align-self: center;
+        justify-self: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-column: 1 / 2;
+        }
+    }
+
+    &__sub{
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+        align-self: end;
+        justify-self: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-column: 1 / 2;
+        }
+    }
+
+    &__info{
+        display: grid;
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-gap: 1rem 0rem;
+        }
+
+        &-1{
+            grid-row: 3 / 4;
+            grid-column: 3 / 4;
+
+            @media only screen and (max-width: $bp-smallest) {
+                grid-row: 3 / 4;
+                grid-column: 1 / 2;
+            }
+        }
+
+        &-2{
+            grid-row: 4 / 5;
+            grid-column: 2 / 3;
+
+            @media only screen and (max-width: $bp-smallest) {
+                grid-row: 5 / 6;
+                grid-column: 1 / 2;
+            }
+        }
+
+        &-name{
+            font-size: 3rem;
+            align-self: end;
+            justify-self: center;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 2.3rem;
+            }
+            @media only screen and (max-width: $bp-large) {
+                font-size: 2.2rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 2rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &-location{
+            font-size: 1.5rem;
+            color: $color-primary;
+            justify-self: center;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 1.5rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1.2rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1rem;
+            }
+
+        }
+
+        &-description{
+            font-size: 2rem;
+            color: rgba(0,0,0, .5);
+            justify-self: center;
+            text-align: center;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 1.8rem;
+            }
+            @media only screen and (max-width: $bp-large) {
+                font-size: 1.6rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1.4rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__footer{
+            display: grid;
+            grid-template-columns: 1fr max-content 1fr;
+            font-size: 1.8rem;
+            color: rgba(0,0,0,.5);
+            justify-items: center;
+
+            span{
+                text-transform: uppercase;
+                color: black;
+            }
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 1.5rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1.3rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+
+}

@@ -1,0 +1,64 @@
+// COLOR VARIABLES
+$color-primary: #879BAF;
+$color-primary-light: rgba(135,155,175,.7);
+
+
+$color-secondary-light: rgba(229,226,213,.6);
+$color-secondary-transition: rgb(239,238,230);
+
+$color-grey-light: #CACACA;
+
+$color-black-light: rgba(0,0,0,.4);
+
+
+// FONT VARIABLES
+$font-display: 'LeishaScript';
+$font-primary: 'Lora';
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+$bp-smallest: 25em;     // 400px     //22.5em;  // 360px;
+
+// IMPORT CUSTOM FONTS
+@font-face {
+    font-family: lovelyGirl;
+    src: url('../fonts/Lovely\ Girl.otf');
+}
+
+@font-face {
+    font-family: Lora;
+    src: url('../fonts/Lora-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: LeishaScript;
+    src: url('../fonts/Leisha\ Script.otf');
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/ 16px = 62.5% -> 1rem = 10px
+}
+
+body{
+    font-family: $font-primary;
+}
+
+.container {
+    display: grid;
+    //grid-template-rows: 7.6rem repeat(3, min-content) 40vw repeat(6, min-content);
+    grid-template-rows: repeat(3, min-content) 40vw repeat(6, min-content);
+
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; // 8 columns with width to be between minimum content and 140px or 14rem
+} 

@@ -1,0 +1,76 @@
+.invite{
+    //background-color: $color-secondary-light;
+    background-image: linear-gradient(
+        to  top,
+        rgba(255,255,255, 1),
+        rgba($color-secondary-transition, 1), rgba($color-secondary-transition, 1),
+        rgba($color-secondary-transition, 1),  rgba($color-secondary-transition, 1),
+        rgba($color-secondary-transition, 1),  rgba($color-secondary-transition, 1),
+        rgba($color-secondary-transition, 1));
+
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-rows: 5vh max-content minmax(min-content, max-content) max-content 20vh;
+    grid-template-columns: 1fr 50vw 1fr;
+    grid-gap: 5rem 0rem;
+    justify-items: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+        grid-gap: 2.5rem 0rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 1fr 80vw 1fr;
+    }
+
+    &__heading{
+        grid-row: 2 / 3;
+        grid-column: 1 / 4;
+    }
+
+    &__text{
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+
+        // @media only screen and (max-width: $bp-large) {
+        //     grid-column: 2 / 6;
+        // }
+    }
+
+    &__btn{
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+        align-self: start;
+        padding: 1rem 5rem;
+        border: solid;
+        border-color: $color-primary-light;
+        border-radius: 4px;
+        color: $color-primary;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            color: white;
+            background-color: $color-primary-light;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 1rem 4.5rem;
+            font-size: 1.2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 1rem 4rem;
+            font-size: 1rem;
+        }
+    }
+
+}
+
+.transition{
+    
+}
+

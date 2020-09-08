@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Car</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/glide.core.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="../../images/Matt K.png" alt=""></li>
+            <li class="glide__slide"><img src="../../images/Matt T.png" alt=""></li>
+            <li class="glide__slide"><img src="../../images/Seth.png" alt=""></li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          </div>
+      </div>
+
+      <!-- <div data-glide-el="controls">
+        <button data-glide-dir="<<">Start</button>
+        <button data-glide-dir=">>">End</button>
+      </div> -->
+      
+      
+
+    <!-- Script -->
+    <!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 3
+        }
+        new Glide('.glide', config).mount()
+    </script>
+  </body>
+</html>

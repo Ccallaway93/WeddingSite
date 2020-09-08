@@ -1,0 +1,76 @@
+.composition {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    &__photo {
+        width: 100%;
+        //height: 80%;
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0, .4);
+        border-radius: 2px;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 30%;
+        }
+
+        &--p1 {
+            grid-column: 2 / 5;
+            grid-row: 2 / 5;
+            justify-self: center;
+            align-self: end;
+            z-index: 11;
+            @media only screen and (max-width: $bp-smallest) {
+                grid-column: 1 / 6;
+                grid-row: 2 / 5;
+                justify-self: start;
+                align-self: center;
+            }
+        }
+
+        &--p2 {
+            grid-row: 2 / 4;
+            grid-column: 3 / 6;
+            justify-self: center;
+            align-self: start;
+            z-index: 10;
+
+            @media only screen and (max-width: $bp-smallest) {
+                grid-column: 1 / 6;
+                grid-row: 2 / 5;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+
+        &--p3 {
+            grid-row: 1 / 4;
+            grid-column: 1 / 4;
+            justify-self: end;
+            align-self: center;
+            z-index: 9;
+
+            @media only screen and (max-width: $bp-smallest) {
+                grid-column: 1 / 6;
+                grid-row: 2 / 5;
+                justify-self: end;
+                align-self: center;
+            }
+        }
+
+        &:hover {
+            outline: 1rem solid $color-primary;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba(0,0,0, .5);
+            z-index: 20;
+        }
+
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+    //composition:hover composition__photo:not(:hover) {
+}
