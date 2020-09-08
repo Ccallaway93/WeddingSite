@@ -104,6 +104,16 @@
             }
         }
 
+        &-warning{
+            grid-row: 5 / 6;
+            grid-column: 2 / 4;
+        }
+
+        &-text{
+            font-size: 1.4rem;
+            color: $color-primary;
+        }
+
         &__btn{
             &:link,
             &:visited {
