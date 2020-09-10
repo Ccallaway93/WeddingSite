@@ -1,0 +1,32 @@
+.table{
+
+    &__container{
+        display: grid;
+        grid-gap: 4rem;
+        grid-template-rows: 10vh 1fr 10vh;
+        grid-template-columns: 10vw 1fr 10vw;
+    }
+
+    &__totals{
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        span{
+            font-size: 3rem;
+            padding: 2rem;
+            color: $color-primary;
+        }
+    }
+
+}
+
+#adminTable_wrapper{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}

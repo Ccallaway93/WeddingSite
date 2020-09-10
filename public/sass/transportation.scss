@@ -1,0 +1,38 @@
+.transportation{
+    background-color: white;
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-rows: 5vh repeat(3, max-content) 10vh;
+    grid-template-columns: 1fr 30vw 30vw 1fr;
+
+    @media only screen and (max-width: $bp-smallest) {
+        grid-gap: 2rem;
+    }
+
+
+
+    &__heading{
+        grid-row: 3 / 4;
+        grid-column: 1 / 5;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    &__sub{
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    &__info {
+        grid-row: 4 / 5;
+        grid-column: 2 / 4;
+    }
+
+
+}

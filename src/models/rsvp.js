@@ -20,6 +20,16 @@ const rsvpSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    transportation: {
+        type: String
+    },
+    comment: {
+        type: String,
+        required: false
+    },
+    date: {
+        type: String
+    },
     guest_1: {
         type: String,
         required: false
@@ -35,6 +45,9 @@ const rsvpSchema = new mongoose.Schema({
     guest_4: {
         type: String,
         required: false
+    },
+    count: {
+        type: Number
     }
 });
 

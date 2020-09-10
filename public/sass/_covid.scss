@@ -3,7 +3,7 @@
     grid-column: full-start / full-end;
 
     display: grid;
-    grid-template-rows: 10vh repeat(3, auto) 5vh;
+    grid-template-rows: 5vh repeat(4, auto) 5vh;
     grid-template-columns: 1fr 60vw 1fr;
     grid-gap: 5rem;
     justify-items: center;
@@ -23,7 +23,7 @@
     }
 
     &__heading{
-        grid-row: 1/ 2;
+        grid-row: 2 / 3;
         grid-column: 1 / 4;
         font-size: 9rem;
         color: white;
@@ -47,11 +47,23 @@
     }
 
     &__sub{
-        grid-row: 2 / 3;
         grid-column: 2 / 3;
-        font-size: 2.5rem;
-        color: #cacaca;
-        text-align: center;
+
+        &-1{
+            grid-row: 3 / 4;
+            font-size: 2.5rem;
+            color: #cacaca;
+            text-align: center;
+        }
+
+        &-2{
+            grid-row: 4 / 5;
+            text-align: left;
+            color: white;
+            font-size: 2rem;
+        }
+
+
 
         @media only screen and (max-width: $bp-largest) {
             font-size: 2rem;
@@ -71,7 +83,7 @@
     }
 
     &__list{
-        grid-row: 3 / 4;
+        grid-row: 5 / 6;
         grid-column: 2 / 3;
         color: white;
         font-size: 2rem;

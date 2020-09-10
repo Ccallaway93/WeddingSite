@@ -3,7 +3,7 @@ const path       = require('path')    // This is a core NODE module that allows 
 const express    = require('express')
 const mongoose   = require('mongoose')
 const bodyParser = require('body-parser');
-const ejs        = require('ejs');
+const hbs        = require('hbs')
 
 
 
@@ -27,7 +27,7 @@ app.use(express.json())
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
-app.set("view engine", "ejs");
+app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 
 // Setup static directory to serve

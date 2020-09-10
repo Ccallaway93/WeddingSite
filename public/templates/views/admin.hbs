@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnerandBrittany</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+</head>
+<body>
+<div class="table__container">
+    <table id="adminTable" class="table__admin display">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>RSVP</th>
+                <th>Comment</th>
+                <th>Guest 1</th>
+                <th>Guest 2</th>
+                <th>Guest 3</th>
+                <th>Guest 4</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each records}}
+                <tr>
+                    <td>{{date}}</td>
+                    <td>{{fullName}}</td>
+                    <td>{{email}}</td>
+                    <td>{{response}}</td>
+                    <td>{{comment}}</td>
+                    <td>{{guest_1}}</td>
+                    <td>{{guest_2}}</td>
+                    <td>{{guest_3}}</td>
+                    <td>{{guest_4}}</td>
+                    <td>{{count}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div class="table__totals">
+        <h1 class="table__totals-yes">Total Yes: <span>{{yes}}</span></h1>
+        <h1 class="table__totals-no">Total No: <span>{{no}}</span></h1>
+        <h1 class="table__totals-online">Total Online: <span>{{online}}</span></h1>
+        <h1 class="table__totals-attending">Total Attending in Person: <span>{{attending}}</span></h1>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<script>
+
+        $(document).ready(function() {
+            $('#adminTable').DataTable( {
+                "info":     false,
+                "columns": [
+                    {"orderable": true},
+                    {"orderable": true},
+                    {"orderable": false},
+                    {"orderable": true},
+                    {"orderable": false},
+                    {"orderable": false},
+                    {"orderable": false},
+                    {"orderable": false},
+                    {"orderable": false},
+                    {"orderable": false}
+                ],
+                "order": [[0, "desc"]]
+            } );
+        });
+</script>
+</body>
+</html>

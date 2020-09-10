@@ -39,7 +39,7 @@ body {
   color: white;
   line-height: 1;
   transform: rotate(-9deg); }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .heading-1 {
       font-size: 15rem; } }
   @media only screen and (max-width: 50em) {
@@ -54,7 +54,7 @@ body {
   color: white;
   line-height: 1;
   transform: rotate(-12deg); }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .heading-2 {
       font-size: 6rem; } }
   @media only screen and (max-width: 50em) {
@@ -71,7 +71,7 @@ body {
   letter-spacing: 1rem; }
   .heading-3-white {
     color: white; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .heading-3 {
       font-size: 6rem; } }
   @media only screen and (max-width: 50em) {
@@ -91,7 +91,7 @@ body {
   text-decoration: underline;
   text-transform: uppercase;
   letter-spacing: .2rem; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .heading-4 {
       font-size: 1.5rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -116,7 +116,7 @@ body {
   font-size: 2rem;
   text-align: center;
   letter-spacing: .7rem; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .text-1 {
       font-size: 1.5rem; } }
   @media only screen and (max-width: 50em) {
@@ -136,7 +136,7 @@ body {
   text-align: center;
   letter-spacing: .2rem;
   line-height: 2.8rem; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .text-2 {
       font-size: 1.8rem; } }
   @media only screen and (max-width: 50em) {
@@ -163,7 +163,7 @@ body {
   padding: 1.1rem 8rem;
   cursor: pointer;
   transition: all .2s; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .btn:link, .btn:visited {
       font-size: 1.5rem;
       padding: 1rem 6rem; } }
@@ -219,7 +219,7 @@ body {
   font-size: 3rem;
   color: white; }
 
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 77.5em) {
   .nav__link:link, .nav__link:visited {
     font-size: 1.5rem; }
 
@@ -378,7 +378,7 @@ body {
   align-self: start;
   justify-self: center;
   animation: fadeIn 1s ease-out; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .tertiary {
       grid-row: 4 / 5;
       grid-column: 3 / 5;
@@ -492,7 +492,7 @@ body {
   background-color: #879BAF;
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-rows: 10vh repeat(3, auto) 5vh;
+  grid-template-rows: 5vh repeat(4, auto) 5vh;
   grid-template-columns: 1fr 60vw 1fr;
   grid-gap: 5rem;
   justify-items: center;
@@ -508,12 +508,12 @@ body {
     .covid {
       grid-gap: 2rem; } }
   .covid__heading {
-    grid-row: 1/ 2;
+    grid-row: 2 / 3;
     grid-column: 1 / 4;
     font-size: 9rem;
     color: white;
     text-transform: uppercase; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 77.5em) {
       .covid__heading {
         font-size: 7rem; } }
     @media only screen and (max-width: 50em) {
@@ -526,12 +526,18 @@ body {
       .covid__heading {
         font-size: 3rem; } }
   .covid__sub {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    font-size: 2.5rem;
-    color: #cacaca;
-    text-align: center; }
-    @media only screen and (max-width: 75em) {
+    grid-column: 2 / 3; }
+    .covid__sub-1 {
+      grid-row: 3 / 4;
+      font-size: 2.5rem;
+      color: #cacaca;
+      text-align: center; }
+    .covid__sub-2 {
+      grid-row: 4 / 5;
+      text-align: left;
+      color: white;
+      font-size: 2rem; }
+    @media only screen and (max-width: 77.5em) {
       .covid__sub {
         font-size: 2rem; } }
     @media only screen and (max-width: 50em) {
@@ -544,12 +550,12 @@ body {
       .covid__sub {
         font-size: 1.2rem; } }
   .covid__list {
-    grid-row: 3 / 4;
+    grid-row: 5 / 6;
     grid-column: 2 / 3;
     color: white;
     font-size: 2rem;
     line-height: 5rem; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 77.5em) {
       .covid__list {
         font-size: 1.8rem; } }
     @media only screen and (max-width: 50em) {
@@ -587,7 +593,7 @@ body {
     grid-column: 1 / 3;
     font-size: 2rem;
     color: rgba(0, 0, 0, 0.4); }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 77.5em) {
       .footer__credit {
         font-size: 1.6rem; } }
     @media only screen and (max-width: 50em) {
@@ -607,10 +613,10 @@ body {
   grid-template-rows: 8vh repeat(2, max-content) 1fr 0.5fr;
   grid-template-columns: 1fr 30vw 30vw 1fr;
   grid-gap: 3rem; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .hotels {
       grid-template-columns: 1fr 35vw 35vw 1fr; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .hotels {
       grid-template-columns: 1fr 40vw 40vw 1fr; } }
   @media only screen and (max-width: 50em) {
@@ -673,7 +679,7 @@ body {
       font-size: 3rem;
       align-self: end;
       justify-self: center; }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 77.5em) {
         .hotels__info-name {
           font-size: 2.3rem; } }
       @media only screen and (max-width: 62.5em) {
@@ -689,7 +695,7 @@ body {
       font-size: 1.5rem;
       color: #879BAF;
       justify-self: center; }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 77.5em) {
         .hotels__info-location {
           font-size: 1.5rem; } }
       @media only screen and (max-width: 50em) {
@@ -703,7 +709,7 @@ body {
       color: rgba(0, 0, 0, 0.5);
       justify-self: center;
       text-align: center; }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 77.5em) {
         .hotels__info-description {
           font-size: 1.8rem; } }
       @media only screen and (max-width: 62.5em) {
@@ -724,7 +730,7 @@ body {
       .hotels__info__footer span {
         text-transform: uppercase;
         color: black; }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 77.5em) {
         .hotels__info__footer {
           font-size: 1.5rem; } }
       @media only screen and (max-width: 50em) {
@@ -856,9 +862,16 @@ body {
     .registry__gift-warning {
       grid-row: 5 / 6;
       grid-column: 2 / 4; }
+      @media only screen and (max-width: 25em) {
+        .registry__gift-warning {
+          grid-column: 1 / 2;
+          grid-row: 6 / 7; } }
     .registry__gift-text {
       font-size: 1.4rem;
       color: #879BAF; }
+      @media only screen and (max-width: 25em) {
+        .registry__gift-text {
+          font-size: 1rem; } }
     .registry__gift__btn:link, .registry__gift__btn:visited {
       font-size: 2rem;
       padding: 1rem 8rem;
@@ -894,7 +907,7 @@ body {
   grid-template-columns: 12vw 1fr 12vw 1fr 12vw;
   grid-gap: 3rem;
   justify-items: center; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .venue {
       grid-template-columns: 8vw 1fr 8vw 1fr 8vw; } }
   @media only screen and (max-width: 62.5em) {
@@ -922,7 +935,7 @@ body {
       grid-row: 1 / 2;
       height: 9rem;
       width: 10rem; }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 77.5em) {
         .venue__block img {
           height: 6rem;
           width: 7rem; } }
@@ -960,7 +973,7 @@ body {
       justify-self: start;
       align-self: center;
       text-decoration: none; }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 77.5em) {
         .venue__block-title {
           font-size: 2rem; } }
       @media only screen and (max-width: 62.5em) {
@@ -979,7 +992,7 @@ body {
     grid-column: 2 / 5;
     justify-self: center;
     font-size: 2.5rem; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 77.5em) {
       .venue__location {
         font-size: 2rem; } }
     @media only screen and (max-width: 50em) {
@@ -1091,7 +1104,7 @@ body {
   grid-gap: 3rem;
   justify-items: center;
   align-items: center; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .about {
       grid-template-columns: 1fr 60vw 1fr; } }
   @media only screen and (max-width: 50em) {
@@ -1203,7 +1216,7 @@ body {
   @media only screen and (max-width: 25em) {
     .party {
       grid-gap: 1rem; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .party {
       grid-template-columns: 1fr 60vw 1fr; } }
   @media only screen and (max-width: 50em) {
@@ -1300,7 +1313,7 @@ body {
     display: grid;
     background-image: url("/images/rsvp_photo-lg.jpg");
     background-size: cover; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 77.5em) {
       .rsvp__left {
         background-image: url("/images/rsvp_photo-md.jpg"); } }
     @media only screen and (max-width: 62.5em) {
@@ -1431,7 +1444,7 @@ body {
     color: rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
     letter-spacing: .2rem; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 77.5em) {
       .form__radio-label {
         font-size: 1.5rem; } }
     @media only screen and (max-width: 50em) {
@@ -1495,7 +1508,7 @@ body {
     .form__btn:focus {
       outline: none; }
   .form__submit {
-    grid-row: 8 / 9;
+    grid-row: 9 / 10;
     grid-column: 1 / 3;
     align-self: center;
     justify-self: center; }
@@ -1509,7 +1522,7 @@ body {
       border: 0.3rem solid #879BAF;
       border-radius: .3rem;
       transition: all .3s; }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 77.5em) {
         .form__submit-btn {
           font-size: 2.5rem;
           padding: 1rem 16rem; } }
@@ -1538,7 +1551,7 @@ body {
   color: rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
   letter-spacing: .2rem; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 77.5em) {
     .radio-text {
       font-size: 1.8rem; } }
   @media only screen and (max-width: 50em) {
@@ -1550,5 +1563,50 @@ body {
   @media only screen and (max-width: 25em) {
     .radio-text {
       font-size: 1.5rem; } }
+
+.table__container {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-rows: 10vh 1fr 10vh;
+  grid-template-columns: 10vw 1fr 10vw; }
+.table__totals {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .table__totals span {
+    font-size: 3rem;
+    padding: 2rem;
+    color: #879BAF; }
+
+#adminTable_wrapper {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
+.transportation {
+  background-color: white;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-rows: 5vh repeat(3, max-content) 10vh;
+  grid-template-columns: 1fr 30vw 30vw 1fr; }
+  @media only screen and (max-width: 25em) {
+    .transportation {
+      grid-gap: 2rem; } }
+  .transportation__heading {
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+    align-self: center;
+    justify-self: center; }
+  .transportation__sub {
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    align-self: center;
+    justify-self: center; }
+  .transportation__info {
+    grid-row: 4 / 5;
+    grid-column: 2 / 4; }
 
 /*# sourceMappingURL=main.css.map */

@@ -24,7 +24,7 @@ const sendConfirmationEmailNo = (name, email) => {
         to: email,
         from: 'BrittanyAndConnerWedding@gmail.com',
         subject: `Abraham-Callway Wedding RSVP confirmation No`,
-        text: `Hi, ${name}! Thank you so much for your RSVP. Sorry you can't make it, it is your loss really you LOSER!!!`
+        text: `Hi, ${name}! Thank you so much for your RSVP. Sorry you can't make it, you will be missed`
     })
     console.log('rejection Email Sent Successfully!')
 
@@ -36,7 +36,7 @@ const sendConfirmationEmailOnline = (name, email) => {
         to: email,
         from: 'BrittanyAndConnerWedding@gmail.com',
         subject: `Abraham-Callway Wedding RSVP confirmation Online Only`,
-        text: `Hi, ${name}! Thank you so much for your RSVP. We look forward to seeing you online blurry and all! `
+        text: `Hi, ${name}! Thank you so much for your RSVP. We look forward to seeing you online! `
     })
     console.log('Online Email Sent Successfully!')
 
