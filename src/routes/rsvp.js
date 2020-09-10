@@ -88,9 +88,11 @@ router.post('', (req, res) => {
             if(newRsvp.response === 'Yes')
              {
                 // Send email confrimation yes
-                sendConfirmationEmailYes(newRsvp.fullName, newRsvp.email);
+                sendConfirmationEmailYes(newRsvp.fullName, newRsvp.email, newRsvp.transportation);
 
              }
+                
+
              else if(newRsvp.response === 'No'){
 
                 // Send email confirmation no
