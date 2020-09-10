@@ -37,9 +37,9 @@
                         <li><a class="nav__link" href="#registry">Registry</a></li>
                     </ul><!-- .main-menu -->
                 </div>
-                <div class="nav__hamburger">
+                <div id="hamburger" class="nav__hamburger">
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
+                        <i id="icon" class="fa fa-bars"></i>
                     </a>
                 </div>
             </div>
@@ -49,7 +49,6 @@
     <div class="invite">
         <h1 class="invite__heading heading-3">We're Getting Married!</h1>
         <p class="invite__text text-1">We joyfully invite you to share our happiness as we unite in marriage on November 13th, 2020 at 4:00 pm.</p>
-        <button  class="invite__btn">RSVP NOW</button>
     </div>
 
     <!-- <div class="transition transition--1"></div> -->
@@ -379,14 +378,20 @@
         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
             function myFunction() {
                 var x = document.getElementById("main-nav");
+                var icon = document.getElementById('icon');
+                console.log(icon);
 
                     if (x.style.display === "grid") {
                          x.style.display = "none";
-
-                    } else {
+                    } 
+                    else {
                         x.style.display = "grid";
                     }
             }
+
+
+
+
             var btnCounter = 0;
             var guestCounter = 0;
 

@@ -80,7 +80,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .heading-3 {
       font-size: 3rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .heading-3 {
       font-size: 2.5rem;
       letter-spacing: .5rem; } }
@@ -98,7 +98,7 @@ body {
     .heading-4 {
       font-size: 1rem;
       letter-spacing: .1rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .heading-4 {
       font-size: .5rem;
       letter-spacing: .1rem; } }
@@ -126,7 +126,7 @@ body {
     .text-1 {
       font-size: 1.2rem;
       letter-spacing: .2rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .text-1 {
       font-size: 1rem;
       letter-spacing: .2rem; } }
@@ -274,7 +274,7 @@ body {
 
   .nav__main ul a {
     color: #fff; } }
-@media screen and (max-width: 25em) {
+@media screen and (max-width: 26.25em) {
   .nav__logo img {
     display: block;
     height: 2rem; } }
@@ -504,7 +504,7 @@ body {
     .covid {
       grid-template-columns: 1fr 80vw 1fr;
       grid-gap: 3rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .covid {
       grid-gap: 2rem; } }
   .covid__heading {
@@ -522,7 +522,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .covid__heading {
         font-size: 4rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .covid__heading {
         font-size: 3rem; } }
   .covid__sub {
@@ -546,7 +546,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .covid__sub {
         font-size: 1.6rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .covid__sub {
         font-size: 1.2rem; } }
   .covid__list {
@@ -565,7 +565,7 @@ body {
       .covid__list {
         font-size: 1.4rem;
         line-height: 3rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .covid__list {
         font-size: 1.2rem;
         line-height: 2rem; } }
@@ -602,7 +602,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .footer__credit {
         font-size: 1.2rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .footer__credit {
         font-size: .8rem; } }
 
@@ -622,21 +622,21 @@ body {
   @media only screen and (max-width: 50em) {
     .hotels {
       grid-template-columns: 1fr 45vw 45vw 1fr; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .hotels {
       grid-template-rows: 5vh repeat(2, max-content) repeat(2, 1fr);
       grid-template-columns: 1fr; } }
   .hotels__first {
     grid-row: 3 / 4;
     grid-column: 2 / 3; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .hotels__first {
         grid-row: 4 / 5;
         grid-column: 1 / 2; } }
   .hotels__second {
     grid-row: 4 / 5;
     grid-column: 3 / 4; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .hotels__second {
         grid-row: 6 / 7;
         grid-column: 1 / 2; } }
@@ -645,7 +645,7 @@ body {
     grid-column: 2 / 4;
     align-self: center;
     justify-self: center; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .hotels__heading {
         grid-column: 1 / 2; } }
   .hotels__sub {
@@ -653,25 +653,25 @@ body {
     grid-column: 2 / 4;
     align-self: end;
     justify-self: center; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .hotels__sub {
         grid-column: 1 / 2; } }
   .hotels__info {
     display: grid; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .hotels__info {
         grid-gap: 1rem 0rem; } }
     .hotels__info-1 {
       grid-row: 3 / 4;
       grid-column: 3 / 4; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .hotels__info-1 {
           grid-row: 3 / 4;
           grid-column: 1 / 2; } }
     .hotels__info-2 {
       grid-row: 4 / 5;
       grid-column: 2 / 3; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .hotels__info-2 {
           grid-row: 5 / 6;
           grid-column: 1 / 2; } }
@@ -780,7 +780,7 @@ body {
       .invite__btn {
         padding: 1rem 4.5rem;
         font-size: 1.2rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .invite__btn {
         padding: 1rem 4rem;
         font-size: 1rem; } }
@@ -796,7 +796,7 @@ body {
     .registry {
       grid-template-columns: 1fr 40vw 40vw 1fr;
       grid-gap: 3rem 3rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .registry {
       grid-template-columns: 1fr;
       grid-gap: 2rem 0rem; } }
@@ -805,7 +805,7 @@ body {
     grid-column: 1 / 5;
     align-self: center;
     justify-self: center; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .registry__heading {
         grid-column: 1 / 2; } }
   .registry__sub {
@@ -813,7 +813,7 @@ body {
     grid-column: 1 / 5;
     align-self: end;
     justify-self: center; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .registry__sub {
         grid-column: 1 / 2; } }
   .registry__gift {
@@ -821,19 +821,19 @@ body {
     grid-gap: 3rem;
     justify-items: center;
     align-items: center; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .registry__gift {
         grid-gap: 1rem; } }
     .registry__gift-1 {
       grid-row: 3 / 4;
       grid-column: 2 / 3; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .registry__gift-1 {
           grid-column: 1 / 2; } }
     .registry__gift-2 {
       grid-row: 3 / 4;
       grid-column: 3 / 4; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .registry__gift-2 {
           grid-row: 4 / 5;
           grid-column: 1 / 2; } }
@@ -841,7 +841,7 @@ body {
       grid-row: 4 / 5;
       grid-column: 2 / 4;
       align-self: center; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .registry__gift-3 {
           grid-row: 5 / 6;
           grid-column: 1 / 2; } }
@@ -856,20 +856,20 @@ body {
       @media only screen and (max-width: 37.5em) {
         .registry__gift__image {
           width: 20rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .registry__gift__image {
           width: 12rem; } }
     .registry__gift-warning {
       grid-row: 5 / 6;
       grid-column: 2 / 4; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .registry__gift-warning {
           grid-column: 1 / 2;
           grid-row: 6 / 7; } }
     .registry__gift-text {
       font-size: 1.4rem;
       color: #879BAF; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .registry__gift-text {
           font-size: 1rem; } }
     .registry__gift__btn:link, .registry__gift__btn:visited {
@@ -891,7 +891,7 @@ body {
         .registry__gift__btn:link, .registry__gift__btn:visited {
           font-size: 1.8rem;
           padding: .6rem 4rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .registry__gift__btn:link, .registry__gift__btn:visited {
           font-size: 1.4rem;
           padding: .2rem 4rem; } }
@@ -917,7 +917,7 @@ body {
     .venue {
       grid-template-columns: 2vw 1fr 2vw 1fr 2vw;
       grid-gap: 4rem 0rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .venue {
       grid-template-rows: 3vh auto;
       grid-template-columns: 5vw 1fr 1fr 5vw;
@@ -926,7 +926,7 @@ body {
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-gap: 2rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .venue__block {
         grid-template-rows: max-content;
         grid-template-columns: max-content 1fr;
@@ -947,7 +947,7 @@ body {
         .venue__block img {
           height: 4rem;
           width: 5rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .venue__block img {
           height: 2rem;
           width: 3rem;
@@ -962,7 +962,7 @@ body {
       @media only screen and (max-width: 37.5em) {
         .venue__block-text {
           font-size: 1.2rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .venue__block-text {
           font-size: .8rem;
           grid-column: 2 / 3;
@@ -982,7 +982,7 @@ body {
       @media only screen and (max-width: 37.5em) {
         .venue__block-title {
           font-size: 1.6rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .venue__block-title {
           font-size: .8rem;
           grid-column: 2 / 3;
@@ -998,7 +998,7 @@ body {
     @media only screen and (max-width: 50em) {
       .venue__location {
         font-size: 1.6rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .venue__location {
         font-size: .5rem;
         grid-column: 1 / 4; } }
@@ -1009,7 +1009,7 @@ body {
     transform: translateX(-20rem);
     transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
     will-change: transform, opacity; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .venue__ceremony {
         grid-column: 2 / 3; } }
   .venue__cocktail {
@@ -1019,7 +1019,7 @@ body {
     transform: translateX(20rem);
     transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
     will-change: transform, opacity; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .venue__cocktail {
         grid-column: 3 / 4; } }
   .venue__dinner {
@@ -1029,7 +1029,7 @@ body {
     transform: translateX(-20rem);
     transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
     will-change: transform, opacity; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .venue__dinner {
         grid-row: 5 / 6;
         grid-column: 2 / 3; } }
@@ -1040,7 +1040,7 @@ body {
     transform: translateX(20rem);
     transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
     will-change: transform, opacity; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .venue__drive {
         grid-row: 5 / 6;
         grid-column: 3 / 4; } }
@@ -1049,7 +1049,7 @@ body {
     grid-column: 2 / 5;
     align-self: center;
     justify-self: center; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .venue__heading {
         grid-column: 1 / 4; } }
   .venue__sub {
@@ -1057,7 +1057,7 @@ body {
     grid-column: 2 / 5;
     align-self: end;
     justify-self: center; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .venue__sub {
         grid-column: 1 / 4; } }
 
@@ -1113,7 +1113,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .about {
       grid-template-rows: 5vh max-content minmax(min-content, max-content) minmax(min-content, max-content) 5vh; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .about {
       grid-template-rows: 2vh max-content minmax(min-content, max-content) minmax(min-content, max-content) 2vh;
       grid-template-columns: 1fr 80vw 1fr; } }
@@ -1154,7 +1154,7 @@ body {
     z-index: 10;
     transition: all .2s;
     outline-offset: 2rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .composition__photo {
         width: 30%; } }
     .composition__photo--p1 {
@@ -1163,7 +1163,7 @@ body {
       justify-self: center;
       align-self: end;
       z-index: 11; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .composition__photo--p1 {
           grid-column: 1 / 6;
           grid-row: 2 / 5;
@@ -1175,7 +1175,7 @@ body {
       justify-self: center;
       align-self: start;
       z-index: 10; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .composition__photo--p2 {
           grid-column: 1 / 6;
           grid-row: 2 / 5;
@@ -1187,7 +1187,7 @@ body {
       justify-self: end;
       align-self: center;
       z-index: 9; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .composition__photo--p3 {
           grid-column: 1 / 6;
           grid-row: 2 / 5;
@@ -1213,7 +1213,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .party {
       grid-gap: 2rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .party {
       grid-gap: 1rem; } }
   @media only screen and (max-width: 77.5em) {
@@ -1225,7 +1225,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .party {
       grid-template-rows: 5vh max-content minmax(min-content, max-content) minmax(min-content, max-content) 5vh; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .party {
       grid-template-rows: 2vh max-content minmax(min-content, max-content) minmax(min-content, max-content) 2vh;
       grid-template-columns: 1fr 80vw 1fr; } }
@@ -1249,7 +1249,7 @@ body {
     @media only screen and (max-width: 50em) {
       .party__title {
         font-size: 1.3rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .party__title {
         font-size: 1rem; } }
   .party__name {
@@ -1262,7 +1262,7 @@ body {
     @media only screen and (max-width: 50em) {
       .party__name {
         font-size: 1.3rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .party__name {
         font-size: 1rem; } }
 
@@ -1273,7 +1273,7 @@ body {
   @media only screen and (max-width: 50em) {
     .glide {
       width: 75%; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .glide {
       width: 100%; } }
   .glide__image {
@@ -1283,7 +1283,7 @@ body {
       .glide__image {
         height: 38%;
         width: 38%; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .glide__image {
         height: 40%;
         width: 40%; } }
@@ -1453,7 +1453,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .form__radio-label {
         font-size: 1.5rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .form__radio-label {
         font-size: 1.2rem; } }
   .form__radio-button {
@@ -1536,7 +1536,7 @@ body {
       @media only screen and (max-width: 37.5em) {
         .form__submit-btn {
           padding: 1rem 12rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26.25em) {
         .form__submit-btn {
           padding: 1rem 8rem; } }
       .form__submit-btn:hover {
@@ -1560,7 +1560,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .radio-text {
       font-size: 1.7rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .radio-text {
       font-size: 1.5rem; } }
 
@@ -1592,7 +1592,7 @@ body {
   grid-gap: 4rem;
   grid-template-rows: 5vh repeat(3, max-content) 10vh;
   grid-template-columns: 1fr 30vw 30vw 1fr; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .transportation {
       grid-gap: 2rem; } }
   .transportation__heading {
