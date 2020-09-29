@@ -252,7 +252,7 @@
         }
 
         @media only screen and (max-width: $bp-smallest) {
-            font-size: 1.3rem;
+            font-size: .7rem;
         }
     }
 
@@ -279,6 +279,12 @@
             background-color: $color-primary;
             opacity: 0;
             transition: opacity .2s;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            height: 2rem;
+            width: 2rem;
+            border: 3px solid $color-primary;
         }
     }
 

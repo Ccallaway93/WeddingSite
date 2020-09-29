@@ -1470,7 +1470,7 @@ body {
         font-size: 1.5rem; } }
     @media only screen and (max-width: 26.25em) {
       .form__radio-label {
-        font-size: 1.3rem; } }
+        font-size: .7rem; } }
   .form__radio-button {
     height: 3rem;
     width: 3rem;
@@ -1493,6 +1493,11 @@ body {
       background-color: #879BAF;
       opacity: 0;
       transition: opacity .2s; }
+    @media only screen and (max-width: 26.25em) {
+      .form__radio-button {
+        height: 2rem;
+        width: 2rem;
+        border: 3px solid #879BAF; } }
   .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
     opacity: 1; }
   .form__input:placeholder-shown + .form__label {
